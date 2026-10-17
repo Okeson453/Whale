@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "whale-surveillance"
+version = "1.0.0"
+description = "Enterprise Solana Whale Surveillance and Risk Management Engine"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.110.0",
+    "uvicorn[standard]>=0.28.0",
+    "pydantic>=2.6.0",
+    "pydantic-settings>=2.2.0",
+    "sqlalchemy>=2.0.28",
+    "alembic>=1.13.1",
+    "aiosqlite>=0.20.0",
+    "greenlet>=3.0.3",
+    "httpx>=0.27.0",
+    "solders>=0.21.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.1.0",
+    "pytest-asyncio>=0.23.5",
+    "pytest-cov>=4.1.0",
+    "ruff>=0.3.0",
+    "mypy>=1.9.0",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["whale_audit/tests"]
+python_files = ["test_*.py"]
+pythonpath = ["..", "."]

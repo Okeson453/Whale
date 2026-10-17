@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@import "./styles/base.css";
+
+@layer utilities {
+  .glow-cyan {
+    box-shadow: 0 0 20px -5px rgba(6, 182, 212, 0.3);
+  }
+  .glow-rose {
+    box-shadow: 0 0 20px -5px rgba(244, 63, 94, 0.4);
+  }
+}

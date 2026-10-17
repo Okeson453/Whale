@@ -1,0 +1,22 @@
+[
+  "whale_audit/tests/test_circuit_breaker.py::test_circuit_breaker_trip_and_reset",
+  "whale_audit/tests/test_circuit_breaker.py::test_consecutive_failure_auto_trip",
+  "whale_audit/tests/test_circuit_breaker.py::test_daily_loss_limit_trip",
+  "whale_audit/tests/test_dashboard_api.py::test_get_overview",
+  "whale_audit/tests/test_dashboard_api.py::test_get_positions",
+  "whale_audit/tests/test_dashboard_api.py::test_get_risk",
+  "whale_audit/tests/test_dashboard_api.py::test_get_system",
+  "whale_audit/tests/test_dashboard_api.py::test_operator_controls_authorization",
+  "whale_audit/tests/test_dashboard_api.py::test_update_risk_limits",
+  "whale_audit/tests/test_guardrails.py::test_guardrail_blocks_excessive_slippage",
+  "whale_audit/tests/test_guardrails.py::test_guardrail_blocks_tripped_circuit_breaker",
+  "whale_audit/tests/test_guardrails.py::test_guardrail_passes_valid_quote",
+  "whale_audit/tests/test_reservation_concurrency.py::test_capital_reservation_lifecycle",
+  "whale_audit/tests/test_reservation_concurrency.py::test_concurrent_reservations_respect_exposure_cap",
+  "whale_audit/tests/test_risk_freshness_and_baseline.py::test_quote_freshness_expired",
+  "whale_audit/tests/test_risk_freshness_and_baseline.py::test_quote_freshness_missing_timestamp",
+  "whale_audit/tests/test_risk_freshness_and_baseline.py::test_quote_freshness_valid",
+  "whale_audit/tests/test_risk_freshness_and_baseline.py::test_valuation_freshness",
+  "whale_audit/tests/test_trailing_stop.py::test_trailing_stop_not_triggered",
+  "whale_audit/tests/test_trailing_stop.py::test_trailing_stop_triggered_on_drawdown"
+]
